@@ -25,7 +25,7 @@ def crop_search_window(img, window_size, template_size, focus_center = None):
         This function crops the windows and the template from the center of the first frame. 
         
         The center of the template and window is defined by focus_center (e.g. 250,300). If focus_center is 
-        not passed as argument (check wiith if focus_center == None ) , simply calculate the center of the image
+        not passed as an argument (check with if focus_center == None ) , simply calculate the center of the image
         
         HINT: You need to calculate the top-left coordinate for both the window and the template
         where you want to start cropping
@@ -54,7 +54,6 @@ def crop_search_window(img, window_size, template_size, focus_center = None):
         top_left_template(list): top-left index coorinates where the termplate is cropped e.g. [110,410]
         
     """
-    
     raise NotImplementedError
 
 
@@ -64,9 +63,9 @@ def findCorrelation(img,template,method='cv2.TM_CCOEFF_NORMED'):
     
     Correlate the window-search image with the template.
     You can use the cv2.matchTemplate function for this and then use
-    cv2.minMaxLoc to get the maximum correltion value
+    cv2.minMaxLoc to get the maximum correlation value
     
-    HINT: To use cv2.matchtemplate you need to use method_cv = method(eval)
+    HINT: To use cv2.matchtemplate you need to initialize method_cv = eval(method)
     and then pass method_cv into the cv2.matchTemplate function
     
     Args:
@@ -82,6 +81,7 @@ def findCorrelation(img,template,method='cv2.TM_CCOEFF_NORMED'):
     
     '"""
     raise NotImplementedError
+    
 
 
 def findCorrelationAll(imgs,template,method='cv2.TM_CCOEFF_NORMED'):
@@ -114,14 +114,13 @@ def findCorrelationAll(imgs,template,method='cv2.TM_CCOEFF_NORMED'):
     """
     raise NotImplementedError
 
-
 def correct_correlation_result_to_image_coordinates(top_left_correlated_list,imgs,window,template):
     """
     
-    The coordinate outputs of the openCV correlation doesn't match up with the original coordinates.
+    The coordinate outputs of the openCV correlation don't match up with the original coordinates.
     
     Look up the required formula to convert the retrieved pixel locations from the video stack
-    back into the original coorcinate system
+    back into the original coordinate system
     
     Find more here: https://docs.opencv.org/master/d4/dc6/tutorial_py_template_matching.html
     
@@ -141,7 +140,6 @@ def correct_correlation_result_to_image_coordinates(top_left_correlated_list,img
         out: ndarray(int) - The corrected pixel locations in original image space
     
     """
-    
     raise NotImplementedError
 
 
@@ -181,7 +179,6 @@ def translate_image(img,dx,dy):
         res(ndarray): translated image, same shape as input.
     
     """
-
     raise NotImplementedError
 
 
@@ -194,7 +191,7 @@ def translate_all_images(imgs,pixel_shifts):
     
     Args:
         imgs(ndarray): RGB-video array
-        pixel_shifts(ndarray): pixel shifts (2,Nium_x)
+        pixel_shifts(ndarray): pixel shifts (2,Num_x)
     
     Returns:
         out(ndarray): shifted images with same shape as imgs
@@ -216,7 +213,6 @@ def average_images(imgs):
         out(ndarray): average RGB image over the temporal dimensions
     
     """
-    
     raise NotImplementedError
 
 
