@@ -25,11 +25,13 @@ def bilinear_interpolate_numpy_matrix(data, x, y):
     
     HINT: Do NOT use forloops!
     
-    HINT: Think about what each step is doing here. You need to understand it
-    
     HINT: https://gist.github.com/peteflorence/a1da2c759ca1ac2b74af9a83f69ce20e 
     You can copy this code over in a cell in jupyter and play around with
-    it until it works.
+    it until it works. You might want
+    
+    HINT: Think about what each step is doing here. You need to understand it. 
+    You may have to adjust the code not only concerning the variable names but also the order etc.
+    
     
     Args:
         data(ndarray): 2D-Array with dimension 2 x 2
@@ -65,8 +67,11 @@ def bilinear_interpolate_numpy_2D_image(data, x, y):
         y(ndarray): Meshgrid for coordinates in y
     
     """
-    
     raise NotImplementedError
+    
+    
+    
+    
 
     
 def bilinear_interpolate_numpy_RGB_image(data, x, y):
@@ -92,8 +97,8 @@ def bilinear_interpolate_numpy_RGB_image(data, x, y):
         y(ndarray): Meshgrid for coordinates in y
     
     """
-    
     raise NotImplementedError
+    
 
     
     
@@ -119,7 +124,6 @@ def bilinear_interpolate_numpy(data, x, y):
         y(ndarray): Meshgrid for coordinates in y
     
     """
-    
     raise NotImplementedError
 
     
@@ -142,7 +146,6 @@ def get_shift_1D(img,alpha):
         shifts(ndarray): 1D-array with shape (17x1) with shifts for each view
     
     """
-    
     raise NotImplementedError
 
 
@@ -161,7 +164,6 @@ def shift_images_1d(img,shifts):
         out(ndarray): shifted lightfield with same shape as img
     
     """
-    
     raise NotImplementedError
 
 
@@ -217,7 +219,6 @@ def get_shifts(lf_shape,alpha):
             in x and y coordiantes
     
     """
-
     raise NotImplementedError
 
 
@@ -251,9 +252,7 @@ def shift_lightfield(data,DX,DY):
     Returns:
         out(ndarray): a lightfield that was shifted. Same shape as data
     
-    
     """
-    
     raise NotImplementedError
 
 
@@ -291,7 +290,7 @@ def crop_part(data,A_mask = None):
     
     DO NOT USE NUMPY COPY FUNCTIONS
     
-    Use call-by-reference by simply assesssing the subindices and return those.
+    Use call-by-reference by simply assessing the subindices and return those.
     
     HINT: Calculate what the center of the lightfield should be. Then substract
     the A_mask.shape[0]/2 to get the top-left index where you should start cropping
@@ -313,11 +312,11 @@ def average_shifted_lightfield(tmp_lf,A_mask=None):
     """
     
     Average the registered lightfield. The averaging should be done
-    for each channel speratley. After that you result will be the refocused image.
+    for each channel separately. After that your result will be the refocused image.
     
     If no mask is provided (i.e. A_mask == None) you can simply use the mean
     
-    However (this is slightly trickier): if a mask provided the lightfield
+    However (this is slightly trickier): if a mask is provided the lightfield
     now is already weighted, i.e. the mean of the image would undersoot the
     actual value. 
     
