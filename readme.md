@@ -1,4 +1,4 @@
-# Homework 6 - All about lihtfields
+# Homework 6 - All about lightfields
 
 Homework has two parts, hence you also have to work through two different Jupyter Notebooks, called 
 1. part1_lightfield
