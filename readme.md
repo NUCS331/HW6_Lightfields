@@ -9,5 +9,5 @@ In the first part we'll introduce you to the idea of the lightfield. We'll visua
 The second part is about how you can capture an "approximation" of a light-field with a smartphone camera using the video stream. We provide you with pre-captured video that you'll use for a synthethic refocusing. Eventually, you'll have a pipeline where you can capture your own light-field data to digitally synthesize your images.
 
 # Data Download
-Download data from here: [https://nuwildcat-my.sharepoint.com/:f:/g/personal/asd1410_ads_northwestern_edu/EtR2M2wm1o5DjtvQwtbLWgIBayCoLYgo4zUnj3j9XTLpcQ?e=XRhFtr](https://nuwildcat.sharepoint.com/sites/RCH-COSSAIRTLAB/Shared%20Documents/Forms/AllItems.[…]F331%5FIntroduction%5Fto%5Fcompphoto%2Fdata%2FHW6%2Fdata)
+Download data from here: https://nuwildcat.sharepoint.com/sites/RCH-COSSAIRTLAB/Shared%20Documents/Forms/AllItems.aspx?csf=1&web=1&e=kTjoUh&CID=a02b033f%2D0795%2D4443%2D88bb%2Dbe2f22e064c4&FolderCTID=0x0120008904874DBF78794B8ED04CBF8A98DE54&id=%2Fsites%2FRCH%2DCOSSAIRTLAB%2FShared%20Documents%2FORG%2DRSRCH%2DCOSSAIRTLAB%28COMPPHOTOLAB%29%2FCourse%5Fwork%2F331%5FIntroduction%5Fto%5Fcompphoto%2Fdata%2FHW6%2Fdata
 The original lightfield data are from the stanford lightfield archive found here: http://lightfield.stanford.edu/
